@@ -1,16 +1,31 @@
-# React + Vite
+Question 2 – Fetch Data from API using useEffect
+Task
+Create a React component that fetches user data from an API and displays it in a list.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+API:
 
-Currently, two official plugins are available:
+https://jsonplaceholder.typicode.com/users
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Display:
 
-## React Compiler
+Name
+Email
+Example Folder Structure
+src/ ├── components/ │ └── Users.jsx ├── App.jsx └── main.jsx
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Concepts Covered
+useEffect Hook
+API Calls (fetch or axios)
+useState for storing API data
+Logic Explanation
+When the component loads, useEffect runs.
+An API request is sent to fetch user data.
+The received data is stored in state.
+The data is displayed using the map() function.
+Functionalities
+Fetch external data
+Dynamically render list of users
+Possible Improvements
+Add loading state
+Add error handling
+Move API logic to a separate service file
